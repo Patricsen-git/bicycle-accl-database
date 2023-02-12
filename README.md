@@ -59,7 +59,7 @@ The files are labelled as follows:
 
 `falling_ZZZZ_X_YY`
 
-**X** is either 3 or 6, indicating whether the data is exlusively from the accelerometer or the Gyroscope was also utilized. **Y** is the recording number. In some cases, the specific falling direction was also noted. If it is, **ZZZZ** indicated, whether the bicycle was falling left or right. Otherwise it is left out.
+**X** is either 3 or 6, indicating whether the data is exlusively from the accelerometer or the Gyroscope was also utilized. **Y** is the recording number. In some cases, the specific falling direction was also noted. If it is **ZZZZ** indicates, whether the bicycle was falling left or right. Otherwise it is left out.
 
 ## How was the data collected?
 ### Hardware:
