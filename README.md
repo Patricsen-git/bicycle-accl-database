@@ -52,7 +52,7 @@ The files are labelled as follows:
 
 **X** is either 3 or 6, indicating whether the data is exlusively from the accelerometer or the Gyroscope was also utilized. **YY** is the recording number.
 
-# Falling
+### Falling
 Detecting whether the bike is falling to the left or the right, also just called the falling state. 
 
 The files are labelled as follows:
