@@ -31,7 +31,7 @@ import pandas as pd
 
 dataset = dict()
 for filename in os.listdir("3-axis"):
-        dataset[filename] = pd.read_csv("3-axis/" + filename, header=None).to_numpy()
+    dataset[filename] = pd.read_csv("3-axis/" + filename, header=None).to_numpy()
 ```
 Note that these are just two exemplary methods of loading the data. Depending on the intented usage, different methods may be used.
 
