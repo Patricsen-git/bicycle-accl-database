@@ -64,6 +64,7 @@ The files are labelled as follows:
 ## How was the data collected?
 ### Hardware:
 The [IMU](https://content.arduino.cc/assets/Nano_BLE_Sense_lsm9ds1.pdf) is integrated on the [Arduino Nano 33 BLE Sense](https://docs.arduino.cc/resources/datasheets/ABX00031-datasheet.pdf). The Arduino got tightly mounted on the bicycle rack with cable ties. A recording frequency of 10 Hz was chosen, meaning 30 (60 if the Gyroscope is also active) values, 10 for each axis, were taken per second. Since the non-volatile memory of the Arduino is not very large, the data was directly transferred to a laptop via cable, enabling to record for extended periods of time. The laptop was carried in a basked or in a backpack. 
+The X-Axis was facing forwards, in line with the bicycle. The Y-Axis recorded lateral Acceleration, while the Z-Axis recorded vertically. The gyroscope data is also labelled with X,Y and Z, where X records the Yaw TODO!
 
 ### Software:
 The Arduino script is straightforward. The readings are printed to the Serial Monitor, as soon as the Arduino initialized. The first sent message indicated, that the measurements have started. This enabled us to have multiple recordings in a row, each seperated by the first message. Once the Motion has finished, the Arduino was reset, which indicated that the recording has finished. Afterwards the readings were saved manually to a .csv file with the aid of ArduSpreadsheet, available [here](https://circuitjournal.com/arduino-serial-to-spreadsheet).
