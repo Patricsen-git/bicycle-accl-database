@@ -20,17 +20,19 @@ etc...
 
 The files can either be loaded individually with something like `NumPy` or `Pandas`:
 
-    data = np.loadtxt("stop_3_00.csv", delimiter=",")
 
+``` python
+data = np.loadtxt("stop_3_00.csv", delimiter=",")
+```
 Or they can be loaded into a Dictionary, labeled by their filename.
+``` python
+import os
+import pandas as pd
 
-    import os
-    import pandas as pd
-
-    dataset = dict()
-    for filename in os.listdir("3-axis"):
+dataset = dict()
+for filename in os.listdir("3-axis"):
         dataset[filename] = pd.read_csv("3-axis/" + filename, header=None).to_numpy()
-
+```
 Note that these are just two exemplary methods of loading the data. Depending on the intented usage, different methods may be used.
 
 ## The three classes:
@@ -50,7 +52,7 @@ The files are labelled as follows:
 
 **X** is either 3 or 6, indicating whether the data is exlusively from the accelerometer or the Gyroscope was also utilized. **YY** is the recording number.
 
-### Falling
+# Falling
 Detecting whether the bike is falling to the left or the right, also just called the falling state. 
 
 The files are labelled as follows:
